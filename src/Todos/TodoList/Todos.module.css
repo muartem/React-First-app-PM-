@@ -1,0 +1,99 @@
+.header {
+    width: 80%;
+    min-width: 360px;
+
+    padding: 10px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    vertical-align: center;
+
+    background-color: #010a13e3;
+    border-radius: 0 0 20px 20px;
+    border-top: solid 1px #8c9195;
+}
+
+.header>div{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: max-content;
+    margin: 0 auto;
+
+    transition: all .5s  ease-out .2s;
+}
+
+.unlog .onlyLog{
+    position: absolute;
+    opacity: 0;
+    transform: scaleX(.1);
+}
+.unlog .list{
+    opacity: 0;
+    transform: scaleY(.1);
+}
+
+.header input{
+    border-radius: 50px;
+    padding: 4px 20px;
+    background-color: #8c919522;
+    color: #8c9195;
+    border: solid 1px #8c9195;
+    height: calc(1.375rem + 1.5vw);
+}
+.header i.fa{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: center;
+    font-size: 25px;
+}
+
+.btn{
+    padding: 9px;
+    float: right;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 50%;
+}
+.btn:hover{
+    background-color: #ffffff80;
+}
+
+.list{
+    width: 40%;
+    min-width: 320px;
+    height: calc(100vh - 180px);
+    margin: 30px auto;
+
+    background-color: #010a13e3;
+    border-radius: 40px;
+    padding: 30px 10px 30px 20px;
+}
+.list>ul{
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px 0 0
+}
+
+@media screen and (max-width: 1000px){
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 40%;
+    }
+    .list{
+        height: calc(100vh - 285px);
+    }
+}

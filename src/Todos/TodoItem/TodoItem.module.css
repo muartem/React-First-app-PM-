@@ -1,0 +1,42 @@
+.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    list-style-type: none;
+}
+
+.chekBox{
+    width: 12px;
+    opacity: .1;
+    font-weight: 1000;
+}
+.chekBox:hover{
+    opacity: .2;
+}
+
+.done .chekBox{
+    opacity: 1;
+}
+
+.title{
+    flex: 1;
+    margin: 8px 0;
+}
+.title b{
+    background-color: #FFFFFF30;
+}
+.done .title{
+    text-decoration: line-through #FFFFFF88;
+}
+.chekBox,
+.del{
+    font-size: 20px;
+    cursor: pointer;
+}
+.chekBox:hover{
+    color: green;
+}
+.del:hover{
+    color: red;
+}

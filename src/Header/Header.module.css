@@ -1,0 +1,10 @@
+.myContainer{
+    width: 80%;
+    padding: 0;
+}
+.rout{
+    flex-grow: 0;
+}
+.bgmy{
+    background-color: #010a13;
+}

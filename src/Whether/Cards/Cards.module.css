@@ -1,0 +1,38 @@
+.cards{
+    border-radius: 50px;
+    padding: 25px;
+    margin: 30vh auto;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: #010a13e3;
+}
+
+@media screen and (max-width: 1750px){
+    .cards {
+        margin: 22.5vh auto;
+        flex-wrap: wrap;
+        gap: 10px 90px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .cards {
+        gap: 10px 20px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .cards {
+        margin: 5vh auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+        height: 85vh;
+        overflow-y: auto;
+    }
+    .cards::-webkit-scrollbar {
+        width: 0;
+    }
+}
