@@ -25,12 +25,23 @@
 }
 @media screen and (max-width: 1080px){
     .cards {
+        border-radius: 30px;
         margin: 5vh auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         width: fit-content;
         height: 85vh;
         overflow-y: auto;
+    }
+    .cards::-webkit-scrollbar {
+        width: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+        height: 85vh;
     }
     .cards::-webkit-scrollbar {
         width: 0;

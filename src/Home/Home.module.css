@@ -33,6 +33,9 @@
 }
 
 @media screen and (max-width: 1000px){
+    .cards {
+        margin: 25px auto;
+    }
     .svg{
         width: 100px;
     }
@@ -40,12 +43,26 @@
 
 @media screen and (max-width: 600px){
     .cards {
-        max-width: 250px ;
-        margin: 25px auto;
+        max-width: 250px;
+        margin: 20px auto;
         padding: 25px;
         flex-direction: column;
+        border-radius: 30px;
     }
     .svg{
         width: 160px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .cards {
+        max-width: 270px;
+        margin: 15px auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .svg {
+        margin: 10px auto;
+        width: 80px;
     }
 }

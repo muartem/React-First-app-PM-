@@ -43,3 +43,8 @@ input:focus{
   background: #010a13;
 }
 
+@media screen and (max-width: 725px){
+  body{
+    overflow: auto;
+  }
+}

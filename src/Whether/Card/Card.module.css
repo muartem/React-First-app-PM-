@@ -53,3 +53,22 @@
 .card:hover .back{
     transform: rotateY(360deg);
 }
+
+@media screen and (max-width: 720px){
+    .card {
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    .card h2{
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    .icon{
+        float: left;
+        margin: 0 5px;
+        height: 50px;
+        width: 50px;
+        background: center no-repeat;
+    }
+}
